@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bookshelf</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="picture">
+        </section>
+        <section class="book-table">
+            <table>
+
+                <caption>Список литературы</caption>
+
+                <colgroup>
+                    <col class="col-first">
+                    <col class="col-second">
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th scope="col" class="book-title">Название</th>
+                        <th scope="col" class="book-author">Автор</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>Изучаем HTML и CSS. </td>
+                        <td>Эрик и Элизабет Фримен</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript. Полное руководство</td>
+                        <td>Флэнаган Дэвид</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript для детей. Самоучитель по программированию</td>
+                        <td>Ник Морган</td>
+                    </tr>
+                    <tr>
+                        <td>Отзывчивый дизайн на HTML5 и CSS3 для любых устройств</td>
+                        <td>Бен Фрэйн</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+
+                </tbody>
+            </table>
+            <div class="form">
+                <div class="add-form">
+                    <button class="form-button" id="btn-add-book">Добавить книгу</button>
+                    <input type="text" id="add-book-author" placeholder="Введите название книги" disabled>
+                    <input type="text" id="add-book-title" placeholder="Введите автора книги" disabled>
+                </div>
+                <div class="remove-form">
+                    <button class="form-button" id="btn-remove-book">Удалить книгу</button>
+                    <input type="text" id="remove-book-author" placeholder="Введите название книги" disabled>
+                    <input type="text" id="remove-book-title" placeholder="Введите автора книги" disabled>
+                </div>
+                <div class="inner-show">
+                    <button class="form-button" id="btn-show-list">Показать список</button>
+                    <textarea name="show-list" class="show-list" id="textarea-show" cols="30" rows="10"
+                        disabled></textarea>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
+
+
+<!-- Ванильный JS c использованием семантического подхода -->
+<!-- https://skillbox.ru/media/code/kak_pravilno_verstat_html_tablitsy/ -->
